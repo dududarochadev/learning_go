@@ -36,5 +36,6 @@ jobs:
         uses: docker/build-push-action@v6
         with:
           context: .
+          plataforms: linux/x86_64/v8
           push: true
           tags: ${{ steps.meta.outputs.tags }}
